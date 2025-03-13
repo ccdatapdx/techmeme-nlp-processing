@@ -59,7 +59,7 @@ class FileProcess:
             f'{self.lambda_dir}/{service_account_file}',
         )
         to_gbq = pandas_gbq.to_gbq(df,
-                                   destination_table=f'yt_comments_nlp.{destination_table}',
+                                   destination_table=f'techmeme_nlp.{destination_table}',
                                    project_id='yt-comments-dashboard',
                                    if_exists='append',
                                    credentials=credentials
